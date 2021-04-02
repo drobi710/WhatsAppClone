@@ -6,9 +6,10 @@ import { Fontisto } from "@expo/vector-icons";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
-import TabOneScreen from "../screens/TabOneScreen";
+import TabOneScreen from "../screens/ChatsScreen";
 import TabTwoScreen from "../screens/TabTwoScreen";
 import { MainTabParamList, TabOneParamList, TabTwoParamList } from "../types";
+import ChatsScreen from "../screens/ChatsScreen";
 
 const MainTab = createMaterialTopTabNavigator<MainTabParamList>();
 
@@ -37,7 +38,7 @@ export default function MainTabNavigator() {
     >
       <MainTab.Screen
         name="Camera"
-        component={TabOneNavigator}
+        component={ChatsScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <Fontisto name="camera" color={color} size={18} />
@@ -84,7 +85,7 @@ function TabTwoNavigator() {
     <TabTwoStack.Navigator>
       <TabTwoStack.Screen
         name="TabTwoScreen"
-        component={TabTwoScreen}
+        component={ChatsScreen}
         options={{ headerTitle: "Tab Two Title" }}
       />
     </TabTwoStack.Navigator>
