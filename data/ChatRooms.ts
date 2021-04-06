@@ -83,7 +83,7 @@ export default [
     ],
     lastMessage: {
       id: "m4",
-      content: "Can you review my last merge",
+      content: "Can you review",
       createdAt: "2020-09-29T14:48:00.000Z",
     },
   },
@@ -193,7 +193,7 @@ export default [
     ],
     lastMessage: {
       id: "m9",
-      content: "Meet me at the same place",
+      content: "Meet me at same place",
       createdAt: "2020-09-25T15:40:00.000Z",
     },
   },
