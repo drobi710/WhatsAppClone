@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     margin: 10,
-    alignItems: "center",
+    alignItems: "flex-end",
   },
   mainContainer: {
     flexDirection: "row",
@@ -25,9 +25,9 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     backgroundColor: Colors.light.tint,
-    borderRadius: 50,
-    height: 50,
+    borderRadius: 25,
     width: 50,
+    height: 50,
     justifyContent: "center",
     alignItems: "center",
   },

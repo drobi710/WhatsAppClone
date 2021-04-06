@@ -7,18 +7,17 @@ import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
 import { ColorSchemeName, View } from "react-native";
 import {
-  FontAwesome5,
+  Octicons,
   MaterialCommunityIcons,
   MaterialIcons,
-  Octicons,
+  FontAwesome5,
 } from "@expo/vector-icons";
-import Colors from "../constants/Colors";
-
 import NotFoundScreen from "../screens/NotFoundScreen";
 import ChatRoomScreen from "../screens/ChatRoomScreen";
 import { RootStackParamList } from "../types";
 import MainTabNavigator from "./MainTabNavigator";
 import LinkingConfiguration from "./LinkingConfiguration";
+import Colors from "../constants/Colors";
 import ContactsScreen from "../screens/ContactsScreen";
 
 // If you are not familiar with React Navigation, we recommend going through the
@@ -37,11 +36,9 @@ export default function Navigation({
     </NavigationContainer>
   );
 }
-
 // A root stack navigator is often used for displaying modals on top of all other content
 // Read more here: https://reactnavigation.org/docs/modal
 const Stack = createStackNavigator<RootStackParamList>();
-
 function RootNavigator() {
   return (
     <Stack.Navigator

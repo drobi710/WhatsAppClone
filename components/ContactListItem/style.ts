@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
   avatar: {
-    height: 60,
     width: 60,
+    height: 60,
     borderRadius: 50,
     marginRight: 15,
   },
@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
   status: {
     fontSize: 16,
     color: "grey",
-    width: "100%",
   },
 });
 

@@ -1,8 +1,7 @@
 import * as React from "react";
-import { StyleSheet, FlatList } from "react-native";
-import ContactListItem from "../components/ContactListItem";
-import NewMessageButton from "../components/NewMessageButton";
+import { FlatList, StyleSheet } from "react-native";
 import { View } from "../components/Themed";
+import ContactListItem from "../components/ContactListItem";
 
 import users from "../data/Users";
 

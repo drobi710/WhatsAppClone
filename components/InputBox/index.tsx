@@ -1,13 +1,14 @@
-import {
-  Entypo,
-  FontAwesome5,
-  Fontisto,
-  MaterialCommunityIcons,
-  MaterialIcons,
-} from "@expo/vector-icons";
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import styles from "./styles";
+
+import {
+  MaterialCommunityIcons,
+  MaterialIcons,
+  FontAwesome5,
+  Entypo,
+  Fontisto,
+} from "@expo/vector-icons";
 
 const InputBox = () => {
   const [message, setMessage] = useState("");

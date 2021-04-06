@@ -11,15 +11,12 @@ export type MainTabParamList = {
   Status: undefined;
   Calls: undefined;
 };
-
 export type TabOneParamList = {
   TabOneScreen: undefined;
 };
-
 export type TabTwoParamList = {
   TabTwoScreen: undefined;
 };
-
 export type User = {
   id: String;
   name: String;
@@ -33,7 +30,6 @@ export type Message = {
   createdAt: string;
   user: User;
 };
-
 export type ChatRoom = {
   id: String;
   users: User[];

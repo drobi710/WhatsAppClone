@@ -1,8 +1,8 @@
-import moment from "moment";
 import React from "react";
 import { View, Text, Image, TouchableWithoutFeedback } from "react-native";
 import { User } from "../../types";
 import styles from "./style";
+import moment from "moment";
 import { useNavigation } from "@react-navigation/native";
 
 export type ContactListItemProps = {
@@ -15,7 +15,7 @@ const ContactListItem = (props: ContactListItemProps) => {
   const navigation = useNavigation();
 
   const onClick = () => {
-    // navigate to chatroom with this user
+    // navigate to chat room with this user
   };
 
   return (

@@ -1,12 +1,12 @@
 import * as React from "react";
-import { StyleSheet, FlatList } from "react-native";
-import ChatListItem from "../components/ChatListItem";
-import NewMessageButton from "../components/NewMessageButton";
+import { FlatList, StyleSheet } from "react-native";
 import { View } from "../components/Themed";
+import ChatListItem from "../components/ChatListItem";
 
 import chatRooms from "../data/ChatRooms";
+import NewMessageButton from "../components/NewMessageButton";
 
-export default function ChatScreen() {
+export default function ChatsScreen() {
   return (
     <View style={styles.container}>
       <FlatList
@@ -19,7 +19,6 @@ export default function ChatScreen() {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
