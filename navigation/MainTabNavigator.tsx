@@ -86,7 +86,7 @@ function TabTwoNavigator() {
       <TabTwoStack.Screen
         name="TabTwoScreen"
         component={ChatsScreen}
-        options={{ headerTitle: "Tab Two Title" }}
+        options={{ headerTitle: "Tab Two Title", headerShown: false }}
       />
     </TabTwoStack.Navigator>
   );
