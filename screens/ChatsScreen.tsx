@@ -3,10 +3,12 @@ import { StyleSheet } from "react-native";
 import ChatListItem from "../components/ChatListItem";
 import { View } from "../components/Themed";
 
+import chatRooms from "../data/ChatRooms";
+
 export default function ChatScreen() {
   return (
     <View style={styles.container}>
-      <ChatListItem chatRoom={{ lastMessage: { content: "Hello There" } }} />
+      <ChatListItem chatRoom={chatRooms[0]} />
     </View>
   );
 }
